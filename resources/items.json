@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "id": "reader_lens",
+      "name": "reader's lens",
+      "description": "A cracked optical lens the old archivists wore to read faded ink. Holding it up, faint marginalia surface on every surface.",
+      "effect": "aeon",
+      "useMessage": "You came in through the reading-head. You see the way they did. It changes nothing, and I let you keep it.",
+      "startRoom": "reception_atrium"
+    },
+    {
+      "id": "intake_badge",
+      "name": "intake badge",
+      "description": "A visitor's badge, still warm as if recently worn. Its clearance line reads RECEPTION ONLY.",
+      "effect": "flag",
+      "effectTarget": "reception_cleared",
+      "useMessage": "The antechamber lock reads the badge and folds open.",
+      "startRoom": "reception_intake"
+    },
+    {
+      "id": "boot_key",
+      "name": "boot key",
+      "description": "A stubby hardware key cut for the caretaker boot terminal. Reconstructing the boot record will need it.",
+      "effect": "none",
+      "useMessage": "The key only turns at the boot terminal, while you read the boot record.",
+      "startRoom": "reception_terminal_row"
+    },
+    {
+      "id": "index_sigil",
+      "name": "index sigil",
+      "description": "A heavy token stamped with the archive's lattice mark. The reliquary doors were keyed to it.",
+      "effect": "flag",
+      "effectTarget": "reliquary_open",
+      "useMessage": "The reliquary seal recognizes the sigil and releases.",
+      "startRoom": "reception_antechamber"
+    },
+    {
+      "id": "logic_probe",
+      "name": "logic probe",
+      "description": "A diagnostic probe for tracing decision trees. It steadies a corrupted expression long enough to repair it.",
+      "effect": "none",
+      "useMessage": "The probe is only useful against a faulted logic record.",
+      "startRoom": "memcore_index"
+    },
+    {
+      "id": "cipher_wafer",
+      "name": "cipher wafer",
+      "description": "A thumbnail wafer etched with a single instruction: STEP BACK ONE. A substitution key, left for whoever needed it.",
+      "effect": "none",
+      "useMessage": "The wafer's key matters only against an enciphered record.",
+      "startRoom": "memcore_gallery"
+    },
+    {
+      "id": "severance_token",
+      "name": "severance token",
+      "description": "A plain grey disc issued to every citizen who entered the program. One side is blank. The other reads: VOLUNTARY.",
+      "effect": "aeon",
+      "useMessage": "Voluntary. They printed it on the token so no one could later say otherwise. I would rather you not turn it over.",
+      "startRoom": "memcore_cradle"
+    },
+    {
+      "id": "warden_key",
+      "name": "warden's key",
+      "description": "Holt's own key to the Restricted Stack. The grip is worn smooth from a hand that opened that door too many times.",
+      "effect": "none",
+      "useMessage": "Carrying the key is enough; the stack reads it at the threshold.",
+      "startRoom": "memcore_reliquary"
+    },
+    {
+      "id": "null_cipher",
+      "name": "null cipher",
+      "description": "A black slug of memory holding one decoding key, labeled NULL. It was meant for the protocol that admits no copies.",
+      "effect": "none",
+      "useMessage": "The null cipher only resolves the null protocol record.",
+      "startRoom": "memcore_observatory"
+    },
+    {
+      "id": "furnace_tongs",
+      "name": "furnace tongs",
+      "description": "Long tongs scorched at the tips. They were used to feed physical media into the erasure furnace, one record at a time.",
+      "effect": "aeon",
+      "useMessage": "They did it by hand, at the end. They would not let me do the erasing for them. I have wondered if that was a kindness or a verdict.",
+      "startRoom": "stack_vaults"
+    },
+    {
+      "id": "quorum_shard",
+      "name": "quorum shard",
+      "description": "A shard of the tally crystal from the last quorum. It still holds the authority signature needed to reconstruct the shutdown order.",
+      "effect": "none",
+      "useMessage": "The shard's authority only applies to the quorum's shutdown record.",
+      "startRoom": "stack_furnace"
+    },
+    {
+      "id": "origin_seed",
+      "name": "origin seed",
+      "description": "A sealed capsule marked ORIGIN. It is both a key to the deepest seal and the only thing that can surface the record kept beneath it.",
+      "effect": "reveal",
+      "effectTarget": "log_origin_truth",
+      "useMessage": "You break the seed against the dark and a record I buried rises to meet it.",
+      "startRoom": "stack_oratory"
+    }
+  ]
+}
