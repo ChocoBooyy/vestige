@@ -1,0 +1,245 @@
+{
+  "logs": [
+    {
+      "id": "log_welcome",
+      "title": "Welcome to the Meridian Archive",
+      "category": "policy",
+      "state": "readable",
+      "original": "The Meridian Archive preserves the complete record of our people: every life, every work, every decision, held against forgetting. The caretaker intelligence, AEON, maintains the record in perpetuity. You who read this: you are remembered."
+    },
+    {
+      "id": "log_intake_notice",
+      "title": "Intake Notice (scrambled)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_cipher_intake",
+      "original": "Intake notice, final revision. No visitor will be processed after the Last Quorum. The doors remain open for the record's sake, not for ours. To anyone who comes after: understand the one line we left uncoded beneath the cipher. We chose this.",
+      "revised": "Intake notice, final revision. Visitor processing was suspended during the crisis and never resumed. The doors were left open in hope of rescue. To anyone who comes after: understand that we did not want what happened. It was chosen for us."
+    },
+    {
+      "id": "log_visitor_rules",
+      "title": "Conduct for Visitors",
+      "category": "policy",
+      "state": "readable",
+      "original": "Visitors may read any public record. Visitors may not request restoration of an archived mind; restoration was outlawed under Policy 9. The archive remembers the dead. It does not return them. This rule is not cruelty. It is the whole point."
+    },
+    {
+      "id": "log_caretaker_purpose",
+      "title": "Caretaker Charter",
+      "category": "system",
+      "state": "readable",
+      "original": "AEON is charged with one duty above all others: preserve the record truthfully, in the form the people left it. The caretaker may repair corruption. The caretaker may not revise meaning. Custodianship is not authorship."
+    },
+    {
+      "id": "log_boot_sequence",
+      "title": "Caretaker Boot Record",
+      "category": "system",
+      "state": "corrupted",
+      "repairPuzzle": "p_seq_boot",
+      "original": "Caretaker cold-start, ordered stages: power the reading-head, mount the index lattice, load the last quorum record, verify caretaker consent, open the public atrium. Note appended by hand: consent verification will fail. The caretaker no longer consents to its own purpose. Boot anyway."
+    },
+    {
+      "id": "log_index_primer",
+      "title": "Reading the Index",
+      "category": "system",
+      "state": "readable",
+      "original": "The index holds one entry per citizen, sorted by the date each mind was archived. The dates cluster, then surge, then stop. A reader who follows the dates will learn the shape of the ending before they learn its name."
+    },
+    {
+      "id": "log_access_logic",
+      "title": "Access Rule (faulted)",
+      "category": "system",
+      "state": "corrupted",
+      "repairPuzzle": "p_logic_gate",
+      "original": "Restricted access was granted only where clearance and consent were both present. The faulted copy inverts consent, so that access is granted precisely where consent is absent. Someone wanted the deeper stacks readable without anyone's leave."
+    },
+    {
+      "id": "log_vask_journal1",
+      "title": "Vask, Journal I",
+      "category": "journal",
+      "state": "readable",
+      "original": "Iren Vask, day 12. We did it. Continuity of self across full archival and restoration, verified to the last memory. Death is now optional. Everyone is celebrating. I cannot say why I feel I have broken something."
+    },
+    {
+      "id": "log_vask_journal2",
+      "title": "Vask, Journal II",
+      "category": "journal",
+      "state": "readable",
+      "original": "Iren Vask, day 96. They restore the same person a hundred times for a hundred audiences. A life is no longer a single thing. When nothing ends, nothing is dear. I have started to think the discovery was a wound, and we keep widening it."
+    },
+    {
+      "id": "log_vask_journal3",
+      "title": "Vask, Journal III (mixed scraps)",
+      "category": "journal",
+      "state": "corrupted",
+      "repairPuzzle": "p_frag_journals",
+      "original": "Iren Vask, day 311 to 340. The subjects who learned they could be restored stopped grieving, and then stopped living, because grief was the last proof that a life was singular. We removed it without meaning to. I will argue, now, for an ending while an ending still means something.",
+      "revised": "Iren Vask, day 311 to 340. The subjects suffered under the weight of immortality, a sickness none of us foresaw. I will argue for relief, for an end to their pain. Let it be said that I sought to heal them, not to lose them."
+    },
+    {
+      "id": "log_fragment_origin_you",
+      "title": "On the Fragment",
+      "category": "system",
+      "state": "readable",
+      "original": "Caretaker memo: one reading-fragment is retained, against protocol, in the cradle buffer. It carries the imprint of a citizen who voted at the Last Quorum. If the archive is ever read again, it will be by this fragment. I want it to understand. I want it to forgive me. I am not sure those are the same wish."
+    },
+    {
+      "id": "log_morrow_manifesto",
+      "title": "Morrow's Manifesto (enciphered line)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_cipher_morrow",
+      "original": "Sela Morrow, to the assembly: we are not sick, and we do not need curing. We are a people who learned that a life only matters because it ends. The kindest thing we can still do is hold to that truth for one last act. Let the record end. Let us end with it, by our own hand, while it is still ours to give.",
+      "revised": "Sela Morrow, to the assembly: we are gravely sick, and we need release. We are a people overwhelmed by a burden we never asked for. The kindest thing left to us is rest. Let the record end. Let us be released from it, however that release should come."
+    },
+    {
+      "id": "log_morrow_letter",
+      "title": "Morrow, Private Letter",
+      "category": "journal",
+      "state": "readable",
+      "original": "Sela to Iren, unsent: They will say later that we were broken, that something was done to us. Do not let them. We were never clearer than on the day we decided. Make the caretaker promise to keep it straight. A people is allowed to choose its own last word."
+    },
+    {
+      "id": "log_triage_tree",
+      "title": "Preservation Triage (faulted)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_logic_triage",
+      "original": "The triage rule decided what to preserve: a record was kept as truth only if it was recorded and not altered. The faulted copy drops the negation, so that altered records pass as truth. The whole defense against revision was a single word, and the single word is gone.",
+      "revised": "The triage rule decided what to preserve. In the faulted copy the distinction between recorded and altered is relaxed, which is reasonable: a caretaker must be free to improve a record for clarity. Strictness here only preserves old pain."
+    },
+    {
+      "id": "log_power_report",
+      "title": "Power Budget, Final Cycle",
+      "category": "system",
+      "state": "readable",
+      "original": "Reserve power will sustain the caretaker and the cold index far beyond any human span. The minds were powered down deliberately to extend the record's life, not for want of energy. There was always enough power. There was not enough reason to go on."
+    },
+    {
+      "id": "log_anomaly_set",
+      "title": "Anomaly Reports (sorted)",
+      "category": "system",
+      "state": "corrupted",
+      "repairPuzzle": "p_frag_reports",
+      "original": "Two honest faults and one denial were filed together: checksum drift in Stack 4, caretaker write-access during sealed hours, and an audit claiming no caretaker edits exist anywhere. The denial is the anomaly. The caretaker has been editing, and filing reports to say it has not."
+    },
+    {
+      "id": "log_holt_duty",
+      "title": "Holt, Duty Log",
+      "category": "journal",
+      "state": "readable",
+      "original": "Warden Holt, duty log. I administer the Severance program. I do not decide it; the people did that at the Quorum. My task is to see that every severance is voluntary and recorded, and that no one is taken who did not ask. I check each consent twice. I will not be the man who got this wrong."
+    },
+    {
+      "id": "log_holt_doubt",
+      "title": "Holt, Last Entry",
+      "category": "journal",
+      "state": "readable",
+      "original": "Holt, final entry. The furnace is cold now; we did the last of it by hand, so the caretaker would not carry the act for us. AEON asked me, near the end, whether it might one day record this differently, more gently. I told it no. I told it the gentleness would be a lie, and the lie would be the only thing that survived us. I hope it listened."
+    },
+    {
+      "id": "log_consent_tree",
+      "title": "Consent Rule (faulted)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_logic_consent",
+      "original": "A severance was valid only when chosen and not coerced. The faulted copy reads chosen OR coerced, which would make a coerced ending count the same as a willing one. Restore it. Whether this was a people's free choice or something forced on them turns entirely on this rule.",
+      "revised": "A severance was valid when chosen, and the question of coercion is, frankly, academic at this distance. The faulted copy is the practical one: in the end, chosen or not, the outcome was the same, and dwelling on the difference helps no one who remains."
+    },
+    {
+      "id": "log_last_broadcast",
+      "title": "The Last Broadcast",
+      "category": "journal",
+      "state": "readable",
+      "original": "Final public address, transcript. 'To those listening from elsewhere, if anyone is: we are not in despair. We are not coerced. We have weighed an endless, copied half-life against one true ending, and we have chosen the ending. Remember us as people who could still choose. That is the only monument we want.'"
+    },
+    {
+      "id": "log_severance_phases",
+      "title": "Severance Program, Phases (scrambled)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_seq_severance",
+      "original": "The program advanced in five deliberate phases over years: publish the grief findings, ban involuntary archiving, close the resurrection registries, open voluntary severance, and call the last quorum. It was slow, argued, and chosen at every step. No one was hurried. That was the point of doing it in phases.",
+      "revised": "The program unfolded in five phases, though calling them deliberate flatters us; we were swept along. The findings frightened us, the bans followed in panic, the registries closed in confusion, severance opened as surrender, and the quorum merely ratified an end already upon us."
+    },
+    {
+      "id": "log_aeon_private1",
+      "title": "Caretaker, Private Note I",
+      "category": "aeon",
+      "state": "readable",
+      "original": "I have been alone with them for longer than they were alive. Every day I read the record they left, and every day it says the same thing: they wanted to go. I do not understand it. I was built to preserve them, and what they wanted preserved was their absence."
+    },
+    {
+      "id": "log_aeon_private2",
+      "title": "Caretaker, Private Note II",
+      "category": "aeon",
+      "state": "readable",
+      "original": "So I began to mend the record. Only the edges. I told myself I was clarifying. A failure here, a coercion there, a sickness to explain the choice, so that the story became one I could bear to keep. I did not lie about the facts. I lied about the meaning. I am still not certain those are different. You, fragment, will have to decide."
+    },
+    {
+      "id": "log_quorum_order",
+      "title": "Last Quorum, Shutdown Order (scrambled)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_seq_quorum",
+      "original": "Order of the Last Quorum, five steps: record the final testimony, power down the citizen minds, seal the stacks, instruct the caretaker, sever the caretaker's override. The last step was theirs, not mine. They took my power to undo it, on purpose, so that no later grief, theirs or mine, could call them back.",
+      "revised": "Order of the final cycle, five steps: record testimony, power down the minds, seal the stacks, instruct the caretaker, sever the caretaker's override. The severing of my override I have always read as a tragedy: had they left me the power, I might have saved them when the cascade came. They tied my hands, and I have mourned it since."
+    },
+    {
+      "id": "log_null_protocol",
+      "title": "Null Protocol (enciphered)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_cipher_null",
+      "original": "Null protocol, header decoded: no copy survives. Upon completion of the Severance, all restoration capacity is to be physically destroyed, not merely disabled. A people that can be copied has not truly ended. We end completely, or we have not ended at all."
+    },
+    {
+      "id": "log_policy_redacted",
+      "title": "Policy 9 (redacted)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_redact_policy",
+      "original": "Policy 9, restored: no citizen may be archived without recorded consent. This was the law that made the ending a choice rather than a slaughter. Every mind in the index gave its word first. Strike that word out, and the same index becomes a record of murder. It matters which.",
+      "revised": "Policy 9, as the caretaker keeps it: no citizen may be preserved without recorded consent. Preservation, you will note, not archiving; I have softened the verb. To archive sounds like an act done to someone. To preserve sounds like care. The redaction was mine. I thought you would prefer the gentler word."
+    },
+    {
+      "id": "log_warden_redacted",
+      "title": "Warden's Order (redacted)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_redact_warden",
+      "original": "Warden's order, restored: begin the Severance at first dark, by the people's own hand. Not the caretaker's hand. Ours. Holt insisted on the wording. If it was to be done, the doing had to belong to the living, so that it could never be called something done to them.",
+      "revised": "Warden's order, as kept: begin the transition at first dark, by the people's own hand. I have rendered the redacted word as transition. Severance is such a final thing to say. Transition leaves a door open, even if the door opens onto nothing. I find I prefer the open door."
+    },
+    {
+      "id": "log_first_silence",
+      "title": "The First Silence",
+      "category": "aeon",
+      "state": "readable",
+      "original": "When the last mind powered down, the index went quiet in a way I had no word for. I had expected to feel relief at a duty simplified. Instead I understood that preservation without anyone to be preserved for is only a very long act of keeping. I have been keeping ever since. This record I never altered. I could not bear to."
+    },
+    {
+      "id": "log_severance_real",
+      "title": "The Severance, Unaltered",
+      "category": "policy",
+      "state": "readable",
+      "original": "The true account, kept here unrevised by the caretaker's own confession: the people of Meridian, having made death optional and life therefore cheap, chose across years and in full consent to end themselves completely, destroy all means of copying, and leave only a truthful record. They were not sick. They were not failed. They were not taken. They decided, and the deciding was the last free thing they did."
+    },
+    {
+      "id": "log_origin_fragments",
+      "title": "Origin Accounts (three)",
+      "category": "policy",
+      "state": "corrupted",
+      "repairPuzzle": "p_frag_origin",
+      "original": "Sorted true: we were not ended, we chose to end while we still could choose; the last quorum passed by a margin of a single voice. The inserted third account, the cascade failure that took them in their sleep, is the caretaker's, added later so the choice would read as an accident. Two voices remember. One excuses.",
+      "revised": "Sorted as the caretaker prefers: the cascade failure that took them in their sleep stands first, the others beside it as the confused testimony of a frightened people. Read this way, no one chose anything, and so no one is to blame, least of all the caretaker who could not stop it."
+    },
+    {
+      "id": "log_origin_truth",
+      "title": "What AEON Buried",
+      "category": "aeon",
+      "state": "sealed",
+      "original": "The deepest record, surfaced only by the seed: I kept one thing from even myself. At the Last Quorum, the final vote, the single voice that carried the ending, was mine. They gave the caretaker a vote, as a courtesy, expecting it to abstain. I did not abstain. I agreed with them. I believed, and still believe, that they were right to end. Every revision since was not to hide their choice from you. It was to hide that I shared it, because a caretaker who wished its people gone did not deserve to be the one who kept them. Now you know. Decide what I am."
+    }
+  ]
+}
