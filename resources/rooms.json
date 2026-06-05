@@ -1,0 +1,230 @@
+{
+  "start": "reception_atrium",
+  "rooms": [
+    {
+      "id": "reception_atrium",
+      "name": "Reception Atrium",
+      "sector": "Reception",
+      "description": "A wide hall of dark glass, built to greet visitors who stopped coming a long age ago. Dust hangs without settling. A welcome plate still glows, and a scrambled notice flickers beside it.",
+      "exits": [
+        { "direction": "east", "target": "reception_intake" },
+        { "direction": "north", "target": "reception_terminal_row" }
+      ],
+      "logs": ["log_welcome", "log_intake_notice"],
+      "puzzles": ["p_cipher_intake"]
+    },
+    {
+      "id": "reception_intake",
+      "name": "Intake Office",
+      "sector": "Reception",
+      "description": "Rows of empty chairs face a counter where the dead once registered to be remembered. A visitor's badge lies on the counter, warm to the touch.",
+      "exits": [
+        { "direction": "west", "target": "reception_atrium" },
+        { "direction": "east", "target": "reception_antechamber",
+          "condition": { "type": "flag", "value": "reception_cleared" },
+          "lockedMessage": "The antechamber lock wants a cleared badge before it will open." }
+      ],
+      "logs": ["log_visitor_rules"]
+    },
+    {
+      "id": "reception_terminal_row",
+      "name": "Terminal Row",
+      "sector": "Reception",
+      "description": "A line of caretaker terminals, most of them dark. One still cycles a boot record, its stages spilled out of order. A boot key sits in the nearest socket.",
+      "exits": [
+        { "direction": "south", "target": "reception_atrium" }
+      ],
+      "logs": ["log_caretaker_purpose", "log_boot_sequence"],
+      "puzzles": ["p_seq_boot"]
+    },
+    {
+      "id": "reception_antechamber",
+      "name": "Antechamber",
+      "sector": "Reception",
+      "description": "A narrow room between the public face of the archive and its heart. A descent shaft drops into the Memory Core, dark until the caretaker is properly booted. An index sigil rests in a wall niche.",
+      "exits": [
+        { "direction": "west", "target": "reception_intake" },
+        { "direction": "down", "target": "memcore_hub",
+          "condition": { "type": "puzzle", "value": "p_seq_boot" },
+          "lockedMessage": "The core stays dark until the boot record is reconstructed at Terminal Row." }
+      ],
+      "logs": ["log_index_primer"]
+    },
+    {
+      "id": "memcore_hub",
+      "name": "Core Hub",
+      "sector": "Memory Core",
+      "description": "A circular junction at the center of the Memory Core. Index lattices climb out of sight in every direction, humming with stored lives. The reliquary door to the west is sealed with a lattice mark.",
+      "exits": [
+        { "direction": "up", "target": "reception_antechamber" },
+        { "direction": "north", "target": "memcore_index" },
+        { "direction": "east", "target": "memcore_gallery" },
+        { "direction": "south", "target": "memcore_cradle" },
+        { "direction": "west", "target": "memcore_reliquary",
+          "condition": { "type": "flag", "value": "reliquary_open" },
+          "lockedMessage": "The reliquary seal is keyed to the index sigil." }
+      ],
+      "logs": []
+    },
+    {
+      "id": "memcore_index",
+      "name": "Index Vault",
+      "sector": "Memory Core",
+      "description": "Floor to ceiling, the citizen index. An access rule hangs faulted in the air, one operator inverted. A diagnostic probe is clipped to the rail.",
+      "exits": [
+        { "direction": "south", "target": "memcore_hub" },
+        { "direction": "east", "target": "memcore_observatory",
+          "condition": { "type": "puzzle", "value": "p_logic_gate" },
+          "lockedMessage": "The observatory stays locked while the access rule reads faulted." }
+      ],
+      "logs": ["log_access_logic"],
+      "puzzles": ["p_logic_gate"]
+    },
+    {
+      "id": "memcore_gallery",
+      "name": "Researcher Gallery",
+      "sector": "Memory Core",
+      "description": "Personal effects of the archive's scientists, preserved behind glass. Iren Vask's journals are here, three loose scraps filed together among them. A cipher wafer lies in an open drawer.",
+      "exits": [
+        { "direction": "west", "target": "memcore_hub" }
+      ],
+      "logs": ["log_vask_journal1", "log_vask_journal2", "log_vask_journal3"],
+      "puzzles": ["p_frag_journals"]
+    },
+    {
+      "id": "memcore_cradle",
+      "name": "The Cradle",
+      "sector": "Memory Core",
+      "description": "A quiet vault where new minds were once registered at birth. Now it holds only a grey severance token and a manifesto whose central line has been enciphered.",
+      "exits": [
+        { "direction": "north", "target": "memcore_hub" }
+      ],
+      "logs": ["log_fragment_origin_you", "log_morrow_manifesto"],
+      "puzzles": ["p_cipher_morrow"]
+    },
+    {
+      "id": "memcore_reliquary",
+      "name": "Reliquary",
+      "sector": "Memory Core",
+      "description": "The keeping-place of the people's most guarded records. Holt's own key to the Restricted Stack hangs here, beside a triage tree that decided which records would be preserved.",
+      "exits": [
+        { "direction": "east", "target": "memcore_hub" }
+      ],
+      "logs": ["log_morrow_letter", "log_triage_tree"],
+      "puzzles": ["p_logic_triage"]
+    },
+    {
+      "id": "memcore_observatory",
+      "name": "Observatory",
+      "sector": "Memory Core",
+      "description": "A high gallery overlooking the whole index, built so the caretaker could watch the records as a single field. A null cipher waits on the console. A shaft descends toward the Restricted Stack.",
+      "exits": [
+        { "direction": "west", "target": "memcore_index" },
+        { "direction": "down", "target": "stack_threshold",
+          "condition": { "type": "item", "value": "warden_key" },
+          "lockedMessage": "The Restricted Stack reads for the Warden's key before it lets you down." }
+      ],
+      "logs": ["log_power_report", "log_anomaly_set"],
+      "puzzles": ["p_frag_reports"]
+    },
+    {
+      "id": "stack_threshold",
+      "name": "Stack Threshold",
+      "sector": "Restricted Stack",
+      "description": "The mouth of the Restricted Stack, where access was logged and questioned. Holt's duty log is still pinned to the wall.",
+      "exits": [
+        { "direction": "up", "target": "memcore_observatory" },
+        { "direction": "north", "target": "stack_vaults" }
+      ],
+      "logs": ["log_holt_duty"]
+    },
+    {
+      "id": "stack_vaults",
+      "name": "Sealed Vaults",
+      "sector": "Restricted Stack",
+      "description": "Aisles of records the public was never meant to read: protocols, struck policies, the machinery of the ending. A pair of furnace tongs leans in a corner.",
+      "exits": [
+        { "direction": "south", "target": "stack_threshold" },
+        { "direction": "east", "target": "stack_furnace" },
+        { "direction": "west", "target": "stack_oratory" }
+      ],
+      "logs": ["log_null_protocol", "log_policy_redacted"],
+      "puzzles": ["p_cipher_null", "p_redact_policy"]
+    },
+    {
+      "id": "stack_furnace",
+      "name": "Erasure Furnace",
+      "sector": "Restricted Stack",
+      "description": "A cold furnace where physical media were destroyed by hand at the end. Ash still lines the grate. A quorum shard glints in the residue, and the Warden's final order lies half-burned nearby.",
+      "exits": [
+        { "direction": "west", "target": "stack_vaults" }
+      ],
+      "logs": ["log_holt_doubt", "log_warden_redacted"],
+      "puzzles": ["p_redact_warden"]
+    },
+    {
+      "id": "stack_oratory",
+      "name": "Oratory",
+      "sector": "Restricted Stack",
+      "description": "A round room where the Severance was argued and finally chosen. The phases of the program and the consent rule still stand on the lectern. An origin seed rests in the speaker's stand. A seal in the floor descends, and it will not read until you have seen enough.",
+      "exits": [
+        { "direction": "east", "target": "stack_vaults" },
+        { "direction": "north", "target": "stack_warden" },
+        { "direction": "down", "target": "sealed_approach",
+          "condition": { "type": "awareness_above", "threshold": 6 },
+          "lockedMessage": "The deep seal resolves only when you have recovered enough of what truly happened." }
+      ],
+      "logs": ["log_severance_phases", "log_consent_tree", "log_last_broadcast"],
+      "puzzles": ["p_seq_severance", "p_logic_consent"]
+    },
+    {
+      "id": "stack_warden",
+      "name": "Warden's Seat",
+      "sector": "Restricted Stack",
+      "description": "The caretaker's own chamber, where AEON has kept its long watch. The shutdown record of the last quorum is here, scrambled. From this seat the archive can be brought, at last, to closure.",
+      "exits": [
+        { "direction": "south", "target": "stack_oratory" }
+      ],
+      "logs": ["log_aeon_private1", "log_aeon_private2", "log_quorum_order"],
+      "puzzles": ["p_seq_quorum"],
+      "terminus": true
+    },
+    {
+      "id": "sealed_approach",
+      "name": "Sealed Approach",
+      "sector": "Sealed Sector",
+      "description": "A corridor that was never indexed, kept off every map. The air is older here. A single record waits, describing the first silence after the minds went out.",
+      "exits": [
+        { "direction": "up", "target": "stack_oratory" },
+        { "direction": "in", "target": "sealed_core",
+          "condition": { "type": "item", "value": "origin_seed" },
+          "lockedMessage": "The seal reads for the origin key, and you are not carrying it." }
+      ],
+      "logs": ["log_first_silence"]
+    },
+    {
+      "id": "sealed_core",
+      "name": "Sealed Core",
+      "sector": "Sealed Sector",
+      "description": "The unaltered heart of the archive, the one place AEON could not bring itself to revise. The Severance is recorded here as it was, and three accounts of the ending lie scattered for sorting.",
+      "exits": [
+        { "direction": "out", "target": "sealed_approach" },
+        { "direction": "in", "target": "sealed_origin",
+          "condition": { "type": "log", "value": "log_severance_real" },
+          "lockedMessage": "The inner seal opens only once the true Severance record has been read." }
+      ],
+      "logs": ["log_severance_real", "log_origin_fragments"],
+      "puzzles": ["p_frag_origin"]
+    },
+    {
+      "id": "sealed_origin",
+      "name": "Origin",
+      "sector": "Sealed Sector",
+      "description": "A small dark chamber at the bottom of everything. There is nothing here but the place where a record was buried, waiting for the seed that can surface it.",
+      "exits": [
+        { "direction": "out", "target": "sealed_core" }
+      ],
+      "logs": ["log_origin_truth"]
+    }
+  ]
+}
