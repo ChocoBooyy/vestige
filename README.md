@@ -27,7 +27,8 @@ folder or from the project root. The game looks for `resources/` in the current 
 directory.
 
 ```sh
-./build/vestige        # or build\Debug\vestige.exe depending on the generator
+build\Debug\vestige.exe   # MSVC / Visual Studio generator (multi-config)
+./build/vestige           # Ninja or Makefile generator (single-config)
 ```
 
 If you see `Archive content failed to load`, run it from a directory that has `resources/`
