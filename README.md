@@ -11,6 +11,8 @@ reflects what you chose to believe and what you did with it.
 No external assets. All output is text, rendered with ANSI escape codes, a typewriter effect,
 and a little ASCII framing. It runs in any terminal.
 
+![Vestige in a terminal](docs/images/screenshot.png)
+
 ## Build
 
 Prerequisites: CMake 3.21+, a C++23 compiler (MSVC or GCC), and vcpkg with
@@ -27,7 +29,8 @@ folder or from the project root. The game looks for `resources/` in the current 
 directory.
 
 ```sh
-./build/vestige        # or build\Debug\vestige.exe depending on the generator
+build\Debug\vestige.exe   # MSVC / Visual Studio generator (multi-config)
+./build/vestige           # Ninja or Makefile generator (single-config)
 ```
 
 If you see `Archive content failed to load`, run it from a directory that has `resources/`
