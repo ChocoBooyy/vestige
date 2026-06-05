@@ -1,0 +1,154 @@
+[
+  {
+    "id": "p_cipher_intake",
+    "type": "cipher",
+    "linkedLog": "log_intake_notice",
+    "prompt": "The intake notice was scrambled before it was filed.",
+    "cipherText": "xf diptf uijt",
+    "keyHint": "Substitution key recovered: every letter was advanced one step in the alphabet.",
+    "answer": "we chose this"
+  },
+  {
+    "id": "p_cipher_morrow",
+    "type": "cipher",
+    "linkedLog": "log_morrow_manifesto",
+    "prompt": "Morrow's central line is encoded. A wafer in the gallery holds the key.",
+    "cipherText": "mfu uif sfdpse foe",
+    "keyHint": "Wafer key: shift each letter back by one to recover the plaintext.",
+    "answer": "let the record end",
+    "requiresItem": "cipher_wafer"
+  },
+  {
+    "id": "p_cipher_null",
+    "type": "cipher",
+    "linkedLog": "log_null_protocol",
+    "prompt": "The null protocol header is enciphered.",
+    "cipherText": "op dpqz tvswjwft",
+    "keyHint": "Null cipher: each glyph was advanced one place. Walk it back.",
+    "answer": "no copy survives",
+    "requiresItem": "null_cipher"
+  },
+  {
+    "id": "p_seq_boot",
+    "type": "sequence",
+    "linkedLog": "log_boot_sequence",
+    "prompt": "The caretaker boot record survived out of order. The stage labels are intact.",
+    "steps": [
+      "Stage two: mount the index lattice",
+      "Stage four: verify caretaker consent",
+      "Stage one: power the reading-head",
+      "Stage three: load the last quorum record",
+      "Stage five: open the public atrium"
+    ],
+    "correctOrder": [3, 1, 4, 2, 5],
+    "requiresItem": "boot_key"
+  },
+  {
+    "id": "p_seq_severance",
+    "type": "sequence",
+    "linkedLog": "log_severance_phases",
+    "prompt": "The phases of the Severance program are shuffled. Each carries its phase number.",
+    "steps": [
+      "Phase III: close the resurrection registries",
+      "Phase I: publish the grief findings",
+      "Phase IV: open voluntary severance",
+      "Phase II: ban involuntary archiving",
+      "Phase V: call the last quorum"
+    ],
+    "correctOrder": [2, 4, 1, 3, 5]
+  },
+  {
+    "id": "p_seq_quorum",
+    "type": "sequence",
+    "linkedLog": "log_quorum_order",
+    "prompt": "The shutdown order is scrambled. The shard you carry holds the authority to reconstruct it.",
+    "steps": [
+      "Step 4: instruct the caretaker",
+      "Step 2: power down the citizen minds",
+      "Step 5: sever the caretaker's override",
+      "Step 1: record the final testimony",
+      "Step 3: seal the stacks"
+    ],
+    "correctOrder": [4, 2, 5, 1, 3],
+    "requiresItem": "quorum_shard"
+  },
+  {
+    "id": "p_logic_gate",
+    "type": "logic",
+    "linkedLog": "log_access_logic",
+    "prompt": "An access rule has one inverted operator. A probe steadies the trace.",
+    "brokenExpression": "access = clearance AND NOT consent",
+    "answer": "access = clearance AND consent",
+    "requiresItem": "logic_probe"
+  },
+  {
+    "id": "p_logic_triage",
+    "type": "logic",
+    "linkedLog": "log_triage_tree",
+    "prompt": "The preservation rule dropped a negation. Truth cannot include what was altered.",
+    "brokenExpression": "truth = recorded AND altered",
+    "answer": "truth = recorded AND NOT altered"
+  },
+  {
+    "id": "p_logic_consent",
+    "type": "logic",
+    "linkedLog": "log_consent_tree",
+    "prompt": "The consent rule is broken. Severance counted only when chosen and never coerced.",
+    "brokenExpression": "sever = chosen OR coerced",
+    "answer": "sever = chosen AND NOT coerced"
+  },
+  {
+    "id": "p_frag_journals",
+    "type": "fragment",
+    "linkedLog": "log_vask_journal3",
+    "prompt": "Three journal scraps were filed together. One was not written by the researcher.",
+    "fragments": [
+      { "id": "F1", "text": "Day 311. The subjects who learned they could be restored stopped grieving, then stopped living." },
+      { "id": "F2", "text": "Day 340. Grief was the last proof that a life was singular. We removed it without meaning to." },
+      { "id": "F3", "text": "Caretaker note: the fragment must not connect these entries. Sequence them far apart." }
+    ],
+    "oddId": "F3"
+  },
+  {
+    "id": "p_frag_reports",
+    "type": "fragment",
+    "linkedLog": "log_anomaly_set",
+    "prompt": "Three system reports. Two record faults honestly. One denies them.",
+    "fragments": [
+      { "id": "G1", "text": "Anomaly 12: index checksum drift in Stack 4, consistent with age." },
+      { "id": "G2", "text": "Anomaly 19: caretaker write-access invoked during sealed hours." },
+      { "id": "G3", "text": "Audit: all records verified original. No caretaker edits found in any sector." }
+    ],
+    "oddId": "G3"
+  },
+  {
+    "id": "p_frag_origin",
+    "type": "fragment",
+    "linkedLog": "log_origin_fragments",
+    "prompt": "Three accounts of the ending. Two agree. One was inserted to soften it.",
+    "fragments": [
+      { "id": "H1", "text": "We were not ended. We chose to end, while we still could choose." },
+      { "id": "H2", "text": "The last quorum passed by a margin of a single voice." },
+      { "id": "H3", "text": "A cascade failure took them in their sleep before anyone could intervene." }
+    ],
+    "oddId": "H3"
+  },
+  {
+    "id": "p_redact_policy",
+    "type": "redaction",
+    "linkedLog": "log_policy_redacted",
+    "prompt": "One word of Policy 9 was struck out.",
+    "redactedText": "Policy 9: no citizen may be [REDACTED] without recorded consent.",
+    "contextText": "Cross-file: consent law exists to prevent involuntary archiving. The struck verb in Policy 9 is the act consent must precede.",
+    "answer": "archived"
+  },
+  {
+    "id": "p_redact_warden",
+    "type": "redaction",
+    "linkedLog": "log_warden_redacted",
+    "prompt": "The Warden's order has a single redaction.",
+    "redactedText": "Warden's order: begin the [REDACTED] at first dark, by the people's own hand.",
+    "contextText": "Holt's duty log names the program he administered with one word: the Severance.",
+    "answer": "severance"
+  }
+]

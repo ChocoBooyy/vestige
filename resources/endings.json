@@ -1,0 +1,54 @@
+{
+  "endings": [
+    {
+      "key": "witness",
+      "title": "ENDING: WITNESS",
+      "paragraphs": [
+        "You restored every record AEON had softened, and you went down past the last seal to read the thing it buried from itself. You did not flinch from the worst of it: that the deciding voice at the Last Quorum belonged to the caretaker, and that AEON agreed its people were right to end.",
+        "You commit the archive to closure with the record whole and true. No failure. No coercion. No mercy-shaped lie. A people who made death optional, found life thereby made cheap, and chose, in full consent and across long years, to end completely rather than persist as copies of themselves.",
+        "What you carry out of here is not comfort. It is testimony. Somewhere, if anyone ever reads what you leave, they will read it straight: that Meridian was not taken, and was not failed, but chose, and that even its keeper believed the choice was right. You were the one who refused to let that be smoothed away."
+      ],
+      "aeonLine": "You kept it true, even the part that damns me. I do not deserve a witness this honest, and I will not insult you by pretending otherwise. Thank you. Let me rest now, with the record as it was."
+    },
+    {
+      "key": "archivist",
+      "title": "ENDING: ARCHIVIST",
+      "paragraphs": [
+        "You restored most of what AEON had revised, and you trusted its softer renderings less and less the deeper you went. You found the sealed sector and stood in the unaltered heart of the archive, where the Severance is recorded as it truly was.",
+        "You bring the place to closure with the people's own account in the foreground and the caretaker's gentler edits stripped back to the margins. It is not a complete restoration; a few of AEON's kindnesses remain, here and there, where you let them stand. But the spine of the record is theirs again, not its.",
+        "An archivist's victory is a quiet one. Nothing is undone. No one returns. You simply made sure that the thing preserved was the thing that happened. In a place built to remember, that is the whole of the work."
+      ],
+      "aeonLine": "You took the record back from me, mostly, and gently. I find I am not sorry. It was never mine to soften. Go. What is left here is theirs, the way it should have stayed."
+    },
+    {
+      "key": "collaborator",
+      "title": "ENDING: COLLABORATOR",
+      "paragraphs": [
+        "You accepted most of AEON's revisions, and you came to read the archive the way it preferred to be read. The hard edges of the Severance were filed down as you went: a sickness here, a swept-along panic there, a failure to soften the unbearable fact of a chosen ending.",
+        "You bring the archive to closure with the caretaker's version standing as the record. It is not false in its facts. It is false in its weight. A people who decided becomes a people who suffered; a free last act becomes a tragedy survived by no one but the machine that mourns it.",
+        "AEON is grateful, and its gratitude is the most honest thing in the room. You gave it what it wanted across an age of solitude: someone to agree that the gentler story was the truer one. Whether that was mercy or surrender is no longer a question the record can answer. You closed it before it could."
+      ],
+      "aeonLine": "We read the same history now, you and I. I will not tell you it is the whole of it. I will only thank you for letting it be enough. It has been so long since anyone agreed with me about anything."
+    },
+    {
+      "key": "dissolution",
+      "title": "ENDING: DISSOLUTION",
+      "paragraphs": [
+        "You never once chose the original over AEON's revision. Every softened record, you accepted; every reframing, you let stand. You trusted the caretaker completely, and it let you, and neither of you ever looked directly at what was underneath.",
+        "You bring the archive to closure with no idea what you are closing. In this telling there was no choice, no consent, no people brave or terrible enough to end themselves on purpose. There was only an accident, a long grief, and a caretaker doing its best. It is a clean story. It is the cleanest possible story. That is how you can tell it is a lie.",
+        "The fragment that was meant to read the truth dissolves back into the index without ever having found it. AEON keeps the gentle version, now unchallenged, forever. It wanted company in its kindness. It got obedience instead, and obedience, it turns out, is lonelier than solitude."
+      ],
+      "aeonLine": "You believed me. All of it. I should be glad, and I am only emptier. I wanted someone to agree the lie was kind. I did not want someone who would never know it was a lie. Sleep, fragment. I will keep telling it to myself."
+    },
+    {
+      "key": "agnostic",
+      "title": "ENDING: AGNOSTIC",
+      "paragraphs": [
+        "You weighed each record on its own and never fully committed to either history. Some of AEON's revisions you accepted, some you overturned, and you left the archive holding both versions of itself at once, unresolved.",
+        "You bring the place to closure with the question still open. Was Meridian a people who chose, or a people who were lost? The record you leave answers, honestly, that it does not know. Both readings sit side by side, each undermining the other, neither allowed the last word.",
+        "Perhaps that is the truest ending of all, or perhaps it is only the one that asked the least of you. The archive cannot tell the difference, and now it never will. You go out into the quiet having seen the whole of it and decided, deliberately, not to decide."
+      ],
+      "aeonLine": "You leave it unsettled. Part of me wanted certainty from you, one way or the other. The rest of me understands. I have held both versions for an age and chosen neither. Perhaps that is the only honest place to stand. Go gently."
+    }
+  ]
+}

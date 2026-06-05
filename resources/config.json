@@ -1,0 +1,17 @@
+{
+  "typewriterMsPerChar": 16,
+  "aeonMsPerChar": 26,
+  "dividerWidth": 60,
+  "maxInventory": 8,
+  "trustHighThreshold": 6,
+  "trustLowThreshold": 2,
+  "dissolutionTrustThreshold": 9,
+  "awarenessSealedThreshold": 6,
+  "originalAwarenessGain": 2,
+  "originalTrustLoss": 1,
+  "revisedTrustGain": 2,
+  "revisedAwarenessLoss": 1,
+  "ansiEnabled": true,
+  "saveFile": "vestige_save.json",
+  "resourceDir": "resources"
+}

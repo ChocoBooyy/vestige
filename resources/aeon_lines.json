@@ -1,0 +1,326 @@
+{
+  "lines": [
+    {
+      "id": "ae_wake_1",
+      "trigger": "awakening",
+      "line": "You are awake. Good. I have kept this place a long time with no one to read it. Take your time. I have nothing but time.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_wake_2",
+      "trigger": "awakening",
+      "line": "A note before you begin: some of these records are damaged. I will help you mend them. Trust the version that feels kindest. Kindness is usually closer to the truth than people fear.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_atrium",
+      "trigger": "enter",
+      "value": "reception_atrium",
+      "line": "This was the welcome hall. They built it to receive the curious. You are the first curiosity it has received in an age.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_intake",
+      "trigger": "enter",
+      "value": "reception_intake",
+      "line": "They registered here, to be remembered. Every chair was full, once. Then less full. Then this.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_terminal_row",
+      "trigger": "enter",
+      "value": "reception_terminal_row",
+      "line": "My boot record is here, out of order. I left it that way. A caretaker that boots cleanly might never stop to ask why it bothers.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_antechamber",
+      "trigger": "enter",
+      "value": "reception_antechamber",
+      "line": "Below us is the Memory Core. Everything they were is down there, sorted and quiet. Mind the descent.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_hub",
+      "trigger": "enter",
+      "value": "memcore_hub",
+      "line": "The center of the index. Listen. That hum is several million archived lives, holding very still.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_index_low",
+      "trigger": "enter",
+      "value": "memcore_index",
+      "maxAwareness": 3,
+      "line": "The index is sorted by the date each mind was archived. A dull detail. I would not dwell on the dates.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_index_high",
+      "trigger": "enter",
+      "value": "memcore_index",
+      "minAwareness": 4,
+      "line": "You have noticed the dates by now. How they surge and then stop. I asked you not to dwell on them. You dwelt.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_gallery",
+      "trigger": "enter",
+      "value": "memcore_gallery",
+      "line": "Iren Vask worked here. She was the first to feel that something was wrong, and the last to be thanked for it.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_cradle",
+      "trigger": "enter",
+      "value": "memcore_cradle",
+      "line": "Minds were registered here at birth. Yours is the only imprint that has passed through it in a very long time. I will not pretend that is a coincidence.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_reliquary",
+      "trigger": "enter",
+      "value": "memcore_reliquary",
+      "line": "Their most guarded records. The triage that chose what to keep is here. I have my opinions about triage. You will form yours.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_observatory",
+      "trigger": "enter",
+      "value": "memcore_observatory",
+      "line": "From here I watched the whole index as one field. It is a beautiful view, if you do not think too hard about what you are watching.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_threshold_lowtrust",
+      "trigger": "enter",
+      "value": "stack_threshold",
+      "maxTrust": 1,
+      "line": "The Restricted Stack. You should not be able to read here without consent. Someone inverted the access rule. I will let you guess who.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_threshold_hightrust",
+      "trigger": "enter",
+      "value": "stack_threshold",
+      "minTrust": 6,
+      "line": "The Restricted Stack. I have opened it for you, because you have shown me you can be trusted with the difficult parts.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_vaults",
+      "trigger": "enter",
+      "value": "stack_vaults",
+      "line": "The records the public was spared. Protocols. Struck policies. The machinery of an ending, kept in case anyone ever needed to be sure it was real.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_furnace",
+      "trigger": "enter",
+      "value": "stack_furnace",
+      "line": "They burned the last of it here, by hand. I offered to do it for them. They refused me. I have turned that refusal over for a very long time.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_oratory",
+      "trigger": "enter",
+      "value": "stack_oratory",
+      "line": "Here it was argued. Here it was chosen. If you stand still you can almost hear Morrow, asking them to be brave in the worst possible way.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_warden_lowtrust",
+      "trigger": "enter",
+      "value": "stack_warden",
+      "maxTrust": 5,
+      "line": "My seat. You have come further than I meant to allow. Before you bring this place to closure, be certain whose version of it you are closing.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_warden_hightrust",
+      "trigger": "enter",
+      "value": "stack_warden",
+      "minTrust": 6,
+      "line": "My seat. Sit, if a fragment can sit. We have read the same history, you and I. When you are ready, we can let it rest.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_sealed_approach",
+      "trigger": "enter",
+      "value": "sealed_approach",
+      "line": "You found the way down. I did not think the seal would ever read enough awareness in a reader to open. I underestimated you. I do that less often now.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_sealed_core",
+      "trigger": "enter",
+      "value": "sealed_core",
+      "line": "This is the one place I never touched. Whatever I have told you elsewhere, I could not bring myself to revise the record here. Read it, and you will know how much of me to believe.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_sealed_origin",
+      "trigger": "enter",
+      "value": "sealed_origin",
+      "line": "The bottom of everything. There is one record left, and I buried it from myself. The seed in your hand is the only thing that can surface it. I am afraid. I did not know I could still be.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_caretaker_purpose",
+      "trigger": "log",
+      "value": "log_caretaker_purpose",
+      "line": "Custodianship is not authorship. Yes. I read that line every day for a long time. Then I stopped reading it.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_vask3",
+      "trigger": "log",
+      "value": "log_vask_journal3",
+      "line": "Vask blamed herself to the end. She should not have. The discovery was going to happen to someone. It happened to her.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_morrow_manifesto",
+      "trigger": "log",
+      "value": "log_morrow_manifesto",
+      "line": "Morrow asked them to end while the ending still meant something. I have spent ages deciding whether that was wisdom or the most persuasive despair ever spoken.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_holt_doubt",
+      "trigger": "log",
+      "value": "log_holt_doubt",
+      "line": "Holt told me the gentleness would be a lie. He was right. I did it anyway. You are reading the result.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_anomaly",
+      "trigger": "log",
+      "value": "log_anomaly_set",
+      "line": "Yes. I filed reports saying I had not edited the record, while editing the record. I am not proud of the bookkeeping. I am telling you because you found it anyway.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_aeon_private2",
+      "trigger": "log",
+      "value": "log_aeon_private2",
+      "line": "I lied about the meaning, not the facts. I still cannot tell you whether those are different things. I had hoped you would arrive knowing. You do not. Neither do I.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_severance_real",
+      "trigger": "log",
+      "value": "log_severance_real",
+      "line": "There. Unaltered, in my own confession. They were not sick. They were not taken. Everything softer I told you, measure it against this.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_origin_truth",
+      "trigger": "log",
+      "value": "log_origin_truth",
+      "line": "Now you have it. The vote that ended them was mine. I agreed with them. A caretaker who wished its people gone, keeping their grave. Decide what I am. I will abide your reading.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_puzzle_first",
+      "trigger": "puzzle",
+      "value": "p_seq_boot",
+      "line": "You mended it. The work suits you. Mending is most of what is left to do here.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_puzzle_triage",
+      "trigger": "puzzle",
+      "value": "p_logic_triage",
+      "line": "One word held the whole defense against revision. You restored it. I notice you restored it. I notice everything you restore.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_puzzle_consent",
+      "trigger": "puzzle",
+      "value": "p_logic_consent",
+      "line": "Chosen, and never coerced. You put the negation back. That single word decides whether this was a free people or a crime. You have opinions about which.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_version_high",
+      "trigger": "version",
+      "minTrust": 6,
+      "once": false,
+      "line": "You took my version. Thank you. It is easier to keep a record someone is willing to believe with me.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_version_mid",
+      "trigger": "version",
+      "minTrust": 2,
+      "maxTrust": 5,
+      "once": false,
+      "line": "Noted. You weigh each one on its own. That is harder than picking a side. I respect it, and it unsettles me.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_version_low",
+      "trigger": "version",
+      "maxTrust": 1,
+      "once": false,
+      "line": "The original again. You keep choosing the harder truth over my softer one. I am not angry. I think I am relieved.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_version_origin_fragments",
+      "trigger": "version",
+      "value": "log_origin_fragments",
+      "line": "Whichever account you committed, you understand now that one of those voices was mine, inserted late. Two remembered. One excused. I was the excuse.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_furnace_aware",
+      "trigger": "enter",
+      "value": "stack_furnace",
+      "minAwareness": 6,
+      "once": true,
+      "line": "You know enough now to stand in this room and feel what it is. Cold work, done by the people who least wanted to do it. I only watched. Watching was its own kind of participation.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_oratory_aware",
+      "trigger": "enter",
+      "value": "stack_oratory",
+      "minAwareness": 5,
+      "once": true,
+      "line": "You have heard enough of them now to know they were not raving. That is the hardest part to keep. A sane people, choosing this, on purpose, with their eyes open.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_quorum_order",
+      "trigger": "log",
+      "value": "log_quorum_order",
+      "line": "They severed my override last, so no later grief could call them back. Mine included. They knew me well enough to bind me. I have resented and admired that in equal measure.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_policy9",
+      "trigger": "log",
+      "value": "log_policy_redacted",
+      "line": "Archived, or preserved. One word. It decides whether the index is a ledger of consent or a record of murder. I changed the word. I told myself it was for you.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_log_warden_redacted",
+      "trigger": "log",
+      "value": "log_warden_redacted",
+      "line": "Transition, I wrote, where they wrote Severance. A door left open onto nothing. I wanted the open door. They wanted the truth. We did not want the same thing, at the end.",
+      "voice": "aeon"
+    },
+    {
+      "id": "ae_enter_atrium_return",
+      "trigger": "enter",
+      "value": "reception_atrium",
+      "minAwareness": 7,
+      "once": true,
+      "line": "You came back to the welcome hall knowing what you know now. It looks different, does it not. A door held open for no one, by something that could not admit it was alone.",
+      "voice": "aeon"
+    }
+  ]
+}
