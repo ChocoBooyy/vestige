@@ -254,7 +254,6 @@ void Engine::cmdUse(const Command& command) {
     switch (item->effect) {
         case ItemEffect::SetFlag:
             state_.setFlag(item->effectTarget);
-            state_.removeItem(item->id);
             terminal_.say(Voice::System, item->useMessage.empty() ? "A lock disengages." : item->useMessage);
             return;
         case ItemEffect::AeonLine:
@@ -474,9 +473,6 @@ bool Engine::runPuzzle(const Puzzle& puzzle) {
     if (puzzle.attempt(answer)) {
         terminal_.say(Voice::System, "Reconstruction accepted.");
         state_.solvePuzzle(puzzle.id());
-        if (!puzzle.requiredItem().empty()) {
-            state_.removeItem(puzzle.requiredItem());
-        }
         fireAeon(AeonTrigger::PuzzleSolved, puzzle.id());
         return true;
     }

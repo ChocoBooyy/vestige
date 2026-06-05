@@ -2,7 +2,7 @@
   "typewriterMsPerChar": 16,
   "aeonMsPerChar": 26,
   "dividerWidth": 60,
-  "maxInventory": 8,
+  "maxInventory": 12,
   "trustHighThreshold": 6,
   "trustLowThreshold": 2,
   "dissolutionTrustThreshold": 9,

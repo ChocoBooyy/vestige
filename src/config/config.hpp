@@ -8,7 +8,7 @@ struct Config {
     int typewriterMsPerChar = 16;
     int aeonMsPerChar = 26;
     int dividerWidth = 60;
-    int maxInventory = 8;
+    int maxInventory = 12;
 
     int trustHighThreshold = 6;
     int trustLowThreshold = 2;

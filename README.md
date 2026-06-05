@@ -46,7 +46,7 @@ end of the current line.
 | --- | --- |
 | `go [direction]` | Move between sectors. Bare directions work too (`north`, `n`). |
 | `examine [target]` | Inspect the room, an item, or a record. No target re-describes the room. |
-| `take [item]` | Pick up an item. You can carry eight. |
+| `take [item]` | Pick up an item. You can carry the full set. |
 | `use [item] on [target]` | Apply a carried item. Some open exits, some surface records. |
 | `read [record]` | Read a record. If it is corrupted, this starts its repair. |
 | `inventory` | List what you carry. |
