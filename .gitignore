@@ -1,0 +1,8 @@
+build/
+.vs/
+.idea/
+CMakeCache.txt
+*.o
+*.obj
+vcpkg_installed/
+vestige_save.json
