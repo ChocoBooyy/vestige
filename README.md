@@ -11,6 +11,8 @@ reflects what you chose to believe and what you did with it.
 No external assets. All output is text, rendered with ANSI escape codes, a typewriter effect,
 and a little ASCII framing. It runs in any terminal.
 
+![Vestige in a terminal](docs/images/screenshot.png)
+
 ## Build
 
 Prerequisites: CMake 3.21+, a C++23 compiler (MSVC or GCC), and vcpkg with
